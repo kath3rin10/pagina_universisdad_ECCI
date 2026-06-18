@@ -25,10 +25,10 @@ function cerrarPopup() {
 
 const imagenesModa = [
 
-    "/img/uni_moda0.png",
-    "/img/uni_moda1.png",
-    "/img/uni_moda2.png",
-    "/img/uni_moda3.png"
+    "img/uni_moda0.png",
+    "img/uni_moda1.png",
+    "img/uni_moda2.png",
+    "img/uni_moda3.png"
 
 ];
 
@@ -68,16 +68,16 @@ function cambiarModa(direccion){
 
 const imagenesColor = [
 
-    "/img/uni_color0.png",
-    "/img/uni_color1.png",
-    "/img/uni_color3.png",
-    "/img/uni_color4.png",
-    "/img/uni_color5.png",
-    "/img/uni_color6.png",
-    "/img/uni_color7.png",
-    "/img/uni_color8.png",
-    "/img/uni_color9.png",
-    "/img/uni_color10.png"
+    "img/uni_color0.png",
+    "img/uni_color1.png",
+    "img/uni_color3.png",
+    "img/uni_color4.png",
+    "img/uni_color5.png",
+    "img/uni_color6.png",
+    "img/uni_color7.png",
+    "img/uni_color8.png",
+    "img/uni_color9.png",
+    "img/uni_color10.png"
 ];
 
 let indiceColor = 0;
