@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECCI Fashion Experience 2026</title>
+
+<link rel="stylesheet" href="/css/pagina.css">
+<link rel="stylesheet" href="/css/decoracion_pagina.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<nav>
+<div class="logo">ECCI Fashion 2026</div>
+
+<ul>
+<li><a id="menuInicio" href="#inicio">Inicio</a></li>
+<li><a id="menuExperiencia" href="#experiencia">Experiencia</a></li>
+<li><a id="menuGaleria" href="#galeria">Galería</a></li>
+<li><a id="menuPalabras" href="#palabras">Palabras Claves</a></li>
+<li><a id="menuGlosario" href="#glosario">Glosario</a></li>
+<li><a id="menuConclusion" href="#conclusion">Conclusión</a></li>
+</ul>
+</nav>
+
+<div class="hero" id="inicio">
+
+<div class="hero-text">
+<h1 id="tituloPrincipal">Traigamos el Color de Vuelta</h1>
+
+<p id="subtituloPrincipal">
+Evento de Moda y Diseño ECCI
+27 de Mayo de 2026
+</p>
+
+<div class="botones-hero">
+
+    <button onclick="mostrarMensaje()">
+        Conoce Más
+    </button>
+
+    <button class="btn-traducir" onclick="traducirPagina()">
+        🇺🇸 English
+    </button>
+
+</div>
+
+</div>
+
+<div class="hero-img">
+<img src="/img/sara_victoria.png" alt="Sara Victoria">
+</div>
+
+</div>
+
+</header>
+
+<section id="experiencia">
+
+<h2 id="tituloExperiencia">Mi Experiencia</h2>
+<p id= "expe1">
+Asistir a la charla internacional "Traigamos el Color de Vuelta" fue una experiencia muy interesante porque me permitió conocer una nueva perspectiva sobre la moda y el diseño. Antes pensaba que los colores solo servían para que algo se viera bonito, pero durante la conferencia entendí que también transmiten emociones, personalidad e incluso influyen en la forma en que las personas perciben una marca o un producto.
+</p>
+
+<p id="expe2">
+La participación de Sara Victoria fue inspiradora, ya que compartió conocimientos y experiencias reales de la industria creativa. Aprendí que el color es una herramienta fundamental para comunicar ideas y generar impacto visual. Además, la charla me hizo reflexionar sobre la importancia de la creatividad y la innovación en áreas como la moda, el diseño y la comunicación visual.
+</p>
+
+<p id="expe3">
+En general, este evento me dejó una enseñanza valiosa, ya que pude ampliar mis conocimientos, desarrollar una visión más crítica sobre el uso del color y comprender cómo pequeños detalles pueden marcar una gran diferencia en cualquier proyecto creativo.
+</p>
+
+<p id="expe4">
+Lo que más me llamó la atención fue descubrir que los colores pueden contar historias y transmitir emociones sin necesidad de utilizar palabras. Fue una experiencia diferente que me motivó a observar el diseño y la moda desde una perspectiva más creativa.
+</p>
+
+</section>
+
+<h2 id="tituloGaleria">Galería</h2>
+
+<section id="galeria">
+
+<div class="contenedor-galerias">
+
+    <!-- MODA -->
+    <div class="carrusel">
+
+        <h3>👗 Moda</h3>
+
+        <button class="btn prev" onclick="cambiarModa(-1)">
+            ❮
+        </button>
+
+        <img
+            id="imgModa"
+            src="/img/uni_moda0.png"
+            alt="Moda">
+
+        <button class="btn next" onclick="cambiarModa(1)">
+            ❯
+        </button>
+
+    </div>
+
+    <!-- COLOR -->
+    <div class="carrusel">
+
+        <h3>🎨 Teoría del Color</h3>
+
+        <button class="btn prev" onclick="cambiarColor(-1)">
+            ❮
+        </button>
+
+        <img
+            id="imgColor"
+            src="/img/uni_color0.png"
+            alt="Color">
+
+        <button class="btn next" onclick="cambiarColor(1)">
+            ❯
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+<section id="palabras">
+
+<h2 id="tituloPalabras">Palabras Claves</h2>
+
+<div class="cards">
+
+<div class="card" id="card1">Moda</div>
+<div class="card" id="card2">Diseño</div>
+<div class="card" id="card3">Color</div>
+<div class="card" id="card4">Creatividad</div>
+<div class="card" id="card5">Tendencias</div>
+<div class="card" id="card6">Innovación</div>
+
+</div>
+
+</section>
+
+<section id="glosario">
+
+<h2 id="tituloGlosario">Glosario</h2>
+<div class="tabla-glosario">
+
+<table>
+
+<thead>
+<tr>
+<th>Término</th>
+<th>Definición</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Teoría del Color</td>
+<td>Estudio de cómo los colores se relacionan y generan emociones.</td>
+</tr>
+
+<tr>
+<td>Identidad Visual</td>
+<td>Conjunto de elementos gráficos que representan una marca.</td>
+</tr>
+
+<tr>
+<td>Tendencia</td>
+<td>Estilo o característica popular en una determinada época.</td>
+</tr>
+
+<tr>
+<td>Paleta Cromática</td>
+<td>Selección de colores utilizados en un diseño.</td>
+</tr>
+
+<tr>
+<td>Moda</td>
+<td>Conjunto de estilos y tendencias de vestuario de una época.</td>
+</tr>
+
+<tr>
+<td>Diseño</td>
+<td>Proceso creativo para desarrollar productos visuales.</td>
+</tr>
+
+<tr>
+<td>Creatividad</td>
+<td>Capacidad de generar ideas innovadoras y originales.</td>
+</tr>
+
+<tr>
+<td>Innovación</td>
+<td>Introducción de nuevas ideas o mejoras significativas.</td>
+</tr>
+
+<tr>
+<td>Estética</td>
+<td>Aspecto visual y atractivo de un diseño.</td>
+</tr>
+
+<tr>
+<td>Contraste</td>
+<td>Diferencia visual entre elementos o colores.</td>
+</tr>
+
+<tr>
+<td>Armonía</td>
+<td>Combinación equilibrada de elementos visuales.</td>
+</tr>
+
+<tr>
+<td>Saturación</td>
+<td>Intensidad o pureza de un color.</td>
+</tr>
+
+<tr>
+<td>Tono</td>
+<td>Color específico dentro del espectro cromático.</td>
+</tr>
+
+<tr>
+<td>Textura</td>
+<td>Apariencia o sensación visual de una superficie.</td>
+</tr>
+
+<tr>
+<td>Composición</td>
+<td>Distribución de elementos dentro de un diseño.</td>
+</tr>
+
+<tr>
+<td>Branding</td>
+<td>Proceso de construcción de una marca.</td>
+</tr>
+
+<tr>
+<td>Pasarela</td>
+<td>Espacio donde los modelos presentan colecciones de moda.</td>
+</tr>
+
+<tr>
+<td>Diseñador</td>
+<td>Persona encargada de crear prendas o propuestas visuales.</td>
+</tr>
+
+<tr>
+<td>Fashion Week</td>
+<td>Evento donde se presentan nuevas colecciones de moda.</td>
+</tr>
+
+<tr>
+<td>Estilo</td>
+<td>Forma particular de expresión visual o personal.</td>
+</tr>
+
+<tr>
+<td>Imagen Corporativa</td>
+<td>Percepción visual que transmite una organización.</td>
+</tr>
+
+<tr>
+<td>Minimalismo</td>
+<td>Estilo basado en la simplicidad y pocos elementos.</td>
+</tr>
+
+<tr>
+<td>Psicología del Color</td>
+<td>Estudio del efecto de los colores sobre las emociones.</td>
+</tr>
+
+<tr>
+<td>Diseño Editorial</td>
+<td>Diseño aplicado a revistas, periódicos y publicaciones.</td>
+</tr>
+
+<tr>
+<td>Comunicación Visual</td>
+<td>Transmisión de mensajes mediante imágenes y gráficos.</td>
+</tr>
+
+<tr>
+<td>Inspiración</td>
+<td>Idea o estímulo que impulsa un proceso creativo.</td>
+</tr>
+
+<tr>
+<td>Concepto Creativo</td>
+<td>Idea principal que guía un proyecto de diseño.</td>
+</tr>
+
+<tr>
+<td>Imagen de Marca</td>
+<td>Percepción que tiene el público sobre una marca.</td>
+</tr>
+
+<tr>
+<td>Diseño Digital</td>
+<td>Creación de contenido visual para medios digitales.</td>
+</tr>
+
+<tr>
+<td>Color Complementario</td>
+<td>Color opuesto en el círculo cromático que genera contraste.</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+</div>
+
+</section>
+
+<div class="frase-destacada">
+
+    <span>❝</span>
+
+    Comprendí que los pequeños detalles, como el uso adecuado del color,
+    pueden marcar una gran diferencia en la forma en que comunicamos nuestras ideas.
+
+    <span>❞</span>
+
+</div>
+
+<section id="conclusion">
+
+<h2 id="tituloConclusion">Conclusión</h2>
+
+<p id="con1">
+Participar en este evento fue una experiencia muy enriquecedora porque me permitió aprender cosas que antes no había considerado sobre la moda y el diseño. Gracias a la charla de Sara Victoria comprendí que el color no es simplemente un elemento decorativo, sino una herramienta capaz de transmitir emociones, ideas y mensajes que influyen en la manera en que las personas perciben el mundo que las rodea.
+</p>
+
+<p id="con2">
+Uno de los aspectos que más me llamó la atención fue descubrir cómo algo tan cotidiano como la elección de un color puede tener un impacto tan grande en la identidad de una marca, en una prenda de vestir o incluso en las emociones de quienes la observan. Esto me hizo entender que detrás de cada diseño existe un proceso creativo lleno de análisis, intención y significado.
+</p>
+
+<p id="con3">
+Además de ampliar mis conocimientos, esta experiencia me motivó a valorar más la creatividad y la innovación como herramientas para expresar ideas y generar cambios. Considero que actividades como esta son muy importantes para los estudiantes, ya que nos permiten acercarnos a experiencias reales, conocer diferentes perspectivas y descubrir nuevas áreas de interés para nuestro futuro académico y profesional.
+</p>
+
+
+</section>
+
+<footer>
+
+<p>Universidad ECCI • Fashion Experience 2026</p>
+
+</footer>
+
+<script src="/js/pagina.js"></script>
+
+<div id="popup" class="popup">
+
+  <div class="popup-content">
+
+    <span class="cerrar" onclick="cerrarPopup()">&times;</span>
+
+    <h1 id="popupTitulo">✨ Fashion Experience ECCI ✨</h1>
+
+    <h2 id="popupSubtitulo">Traigamos el Color de Vuelta</h2>
+
+    <p id="popupTexto1">
+      Bienvenido a una experiencia inspirada en la moda,
+      el diseño y la creatividad.
+    </p>
+
+    <p id="popupTexto2">
+      Descubre cómo el color transforma emociones,
+      tendencias e identidades visuales.
+    </p>
+
+    <button id="popupBoton" onclick="cerrarPopup()">
+    Explorar Evento 💖
+    </button>
+
+  </div>
+
+</div>
+
+</body>
+</html>
