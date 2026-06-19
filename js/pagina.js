@@ -1,128 +1,27 @@
-function mostrarMensaje() {
-    document.getElementById("popup").style.display = "flex";
-}
-
-function cerrarPopup() {
-    document.getElementById("popup").style.display = "none";
-}
-
-// =====================
-// POPUP
-// =====================
-
-function mostrarMensaje() {
-    document.getElementById("popup").style.display = "flex";
-}
-
-function cerrarPopup() {
-    document.getElementById("popup").style.display = "none";
-}
-
-
-// =====================
-// GALERÍA MODA
-// =====================
-
-const imagenesModa = [
-
-    "img/uni_moda0.png",
-    "img/uni_moda1.png",
-    "img/uni_moda2.png",
-    "img/uni_moda3.png"
-
-];
-
-let indiceModa = 0;
-
-function cambiarModa(direccion){
-
-    const img =
-    document.getElementById("imgModa");
-
-    img.style.opacity = "0";
-
-    setTimeout(() => {
-
-        indiceModa += direccion;
-
-        if(indiceModa < 0){
-            indiceModa = imagenesModa.length - 1;
-        }
-
-        if(indiceModa >= imagenesModa.length){
-            indiceModa = 0;
-        }
-
-        img.src = imagenesModa[indiceModa];
-
-        img.style.opacity = "1";
-
-    }, 300);
-
-}
-
-
-// =====================
-// GALERÍA COLOR
-// =====================
-
-const imagenesColor = [
-
-    "img/uni_color0.png",
-    "img/uni_color1.png",
-    "img/uni_color3.png",
-    "img/uni_color4.png",
-    "img/uni_color5.png",
-    "img/uni_color6.png",
-    "img/uni_color7.png",
-    "img/uni_color8.png",
-    "img/uni_color9.png",
-    "img/uni_color10.png"
-];
-
-let indiceColor = 0;
-
-function cambiarColor(direccion){
-
-    const img =
-    document.getElementById("imgColor");
-
-    img.style.opacity = "0";
-
-    setTimeout(() => {
-
-        indiceColor += direccion;
-
-        if(indiceColor < 0){
-            indiceColor = imagenesColor.length - 1;
-        }
-
-        if(indiceColor >= imagenesColor.length){
-            indiceColor = 0;
-        }
-
-        img.src = imagenesColor[indiceColor];
-
-        img.style.opacity = "1";
-
-    }, 300);
-
-}
-
 let ingles = false;
 
-function traducirPagina(){
+function traducirPagina() {
 
     ingles = !ingles;
 
-    if(ingles){
+    if (ingles) {
 
+        // MENÚ
+        document.getElementById("menuInicio").innerHTML = "Home";
+        document.getElementById("menuExperiencia").innerHTML = "Experience";
+        document.getElementById("menuGaleria").innerHTML = "Gallery";
+        document.getElementById("menuPalabras").innerHTML = "Keywords";
+        document.getElementById("menuGlosario").innerHTML = "Glossary";
+        document.getElementById("menuConclusion").innerHTML = "Conclusion";
+
+        // HERO
         document.getElementById("tituloPrincipal").innerHTML =
         "Bring Color Back";
 
         document.getElementById("subtituloPrincipal").innerHTML =
         "ECCI Fashion and Design Event<br>May 27, 2026";
 
+        // TÍTULOS
         document.getElementById("tituloExperiencia").innerHTML =
         "My Experience";
 
@@ -138,70 +37,72 @@ function traducirPagina(){
         document.getElementById("tituloConclusion").innerHTML =
         "Conclusion";
 
-        document.getElementById("menuInicio").innerHTML =
-        "Home";
+        document.getElementById("tituloModa").innerHTML =
+        "👗 Fashion";
 
-        document.getElementById("menuExperiencia").innerHTML =
-        "Experience";
+        document.getElementById("tituloColor").innerHTML =
+        "🎨 Color Theory";
 
-        document.getElementById("menuGaleria").innerHTML =
-        "Gallery";
+        // EXPERIENCIA
+        document.getElementById("expe1").innerHTML =
+        "Attending the international conference 'Bring Color Back' was a very interesting experience because it allowed me to discover a new perspective on fashion and design. Before, I thought colors were only used to make things look beautiful, but during the conference I learned that they also communicate emotions, personality and influence how people perceive a brand or product.";
 
-        document.getElementById("menuPalabras").innerHTML =
-        "Keywords";
+        document.getElementById("expe2").innerHTML =
+        "Sara Victoria's participation was inspiring because she shared real experiences and knowledge from the creative industry. I learned that color is a fundamental tool for communicating ideas and creating visual impact. The conference also made me reflect on the importance of creativity and innovation in fashion, design and visual communication.";
 
-        document.getElementById("menuGlosario").innerHTML =
-        "Glossary";
+        document.getElementById("expe3").innerHTML =
+        "Overall, this event left me with valuable lessons. I expanded my knowledge, developed a more critical view of color usage and understood how small details can make a big difference in any creative project.";
 
-        document.getElementById("menuConclusion").innerHTML =
-        "Conclusion";
+        document.getElementById("expe4").innerHTML =
+        "What impressed me most was discovering that colors can tell stories and express emotions without using words. It was a unique experience that motivated me to see design and fashion from a more creative perspective.";
+
+        // PALABRAS CLAVE
+        document.getElementById("card1").innerHTML = "Fashion";
+        document.getElementById("card2").innerHTML = "Design";
+        document.getElementById("card3").innerHTML = "Color";
+        document.getElementById("card4").innerHTML = "Creativity";
+        document.getElementById("card5").innerHTML = "Trends";
+        document.getElementById("card6").innerHTML = "Innovation";
+
+        // FRASE
+        document.getElementById("fraseDestacada").innerHTML =
+        `
+        <span>❝</span>
+        I understood that small details, such as the proper use of color,
+        can make a huge difference in how we communicate our ideas.
+        <span>❞</span>
+        `;
+
+        // CONCLUSIÓN
+        document.getElementById("con1").innerHTML =
+        "Participating in this event was a very enriching experience because it allowed me to learn things I had never considered before about fashion and design. Thanks to Sara Victoria's presentation, I understood that color is not simply decorative, but a tool capable of transmitting emotions, ideas and messages.";
+
+        document.getElementById("con2").innerHTML =
+        "One of the things that caught my attention the most was discovering how something as simple as choosing a color can have such a significant impact on a brand's identity, a garment or even the emotions of those who observe it.";
+
+        document.getElementById("con3").innerHTML =
+        "In addition to expanding my knowledge, this experience motivated me to value creativity and innovation as tools for expressing ideas and generating change. Activities like this are important because they allow students to gain real experiences and discover new areas of interest.";
+
+        // POPUP
+        document.getElementById("popupSubtitulo").innerHTML =
+        "Bring Color Back";
+
+        document.getElementById("popupTexto1").innerHTML =
+        "Welcome to an experience inspired by fashion, design and creativity.";
+
+        document.getElementById("popupTexto2").innerHTML =
+        "Discover how color transforms emotions, trends and visual identities.";
+
+        document.getElementById("popupBoton").innerHTML =
+        "Explore Event 💖";
 
         document.querySelector(".btn-traducir").innerHTML =
         "🇪🇸 Español";
 
-    }else{
+    } else {
 
-        document.getElementById("tituloPrincipal").innerHTML =
-        "Traigamos el Color de Vuelta";
+        location.reload();
 
-        document.getElementById("subtituloPrincipal").innerHTML =
-        "Evento de Moda y Diseño ECCI<br>27 de Mayo de 2026";
-
-        document.getElementById("tituloExperiencia").innerHTML =
-        "Mi Experiencia";
-
-        document.getElementById("tituloGaleria").innerHTML =
-        "Galería";
-
-        document.getElementById("tituloPalabras").innerHTML =
-        "Palabras Claves";
-
-        document.getElementById("tituloGlosario").innerHTML =
-        "Glosario";
-
-        document.getElementById("tituloConclusion").innerHTML =
-        "Conclusión";
-
-        document.getElementById("menuInicio").innerHTML =
-        "Inicio";
-
-        document.getElementById("menuExperiencia").innerHTML =
-        "Experiencia";
-
-        document.getElementById("menuGaleria").innerHTML =
-        "Galería";
-
-        document.getElementById("menuPalabras").innerHTML =
-        "Palabras Claves";
-
-        document.getElementById("menuGlosario").innerHTML =
-        "Glosario";
-
-        document.getElementById("menuConclusion").innerHTML =
-        "Conclusión";
-
-        document.querySelector(".btn-traducir").innerHTML =
-        "🇺🇸 English";
     }
 
 }
