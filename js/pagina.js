@@ -7,12 +7,12 @@ function traducirPagina() {
     if (ingles) {
 
         // MENÚ
-        document.getElementById("menuInicio").innerHTML = "Home";
-        document.getElementById("menuExperiencia").innerHTML = "Experience";
-        document.getElementById("menuGaleria").innerHTML = "Gallery";
-        document.getElementById("menuPalabras").innerHTML = "Keywords";
-        document.getElementById("menuGlosario").innerHTML = "Glossary";
-        document.getElementById("menuConclusion").innerHTML = "Conclusion";
+        document.getElementById("menuInicio").textContent = "Home";
+        document.getElementById("menuExperiencia").textContent = "Experience";
+        document.getElementById("menuGaleria").textContent = "Gallery";
+        document.getElementById("menuPalabras").textContent = "Keywords";
+        document.getElementById("menuGlosario").textContent = "Glossary";
+        document.getElementById("menuConclusion").textContent = "Conclusion";
 
         // HERO
         document.getElementById("tituloPrincipal").innerHTML =
@@ -45,16 +45,16 @@ function traducirPagina() {
 
         // EXPERIENCIA
         document.getElementById("expe1").innerHTML =
-        "Attending the international conference 'Bring Color Back' was a very interesting experience because it allowed me to discover a new perspective on fashion and design. Before, I thought colors were only used to make things look beautiful, but during the conference I learned that they also communicate emotions, personality and influence how people perceive a brand or product.";
+        "Attending the international conference 'Bring Color Back' was a very interesting experience because it allowed me to discover a new perspective on fashion and design.";
 
         document.getElementById("expe2").innerHTML =
-        "Sara Victoria's participation was inspiring because she shared real experiences and knowledge from the creative industry. I learned that color is a fundamental tool for communicating ideas and creating visual impact. The conference also made me reflect on the importance of creativity and innovation in fashion, design and visual communication.";
+        "Sara Victoria's participation was inspiring because she shared real experiences and knowledge from the creative industry.";
 
         document.getElementById("expe3").innerHTML =
-        "Overall, this event left me with valuable lessons. I expanded my knowledge, developed a more critical view of color usage and understood how small details can make a big difference in any creative project.";
+        "This event gave me valuable lessons and helped me better understand the importance of color in communication and design.";
 
         document.getElementById("expe4").innerHTML =
-        "What impressed me most was discovering that colors can tell stories and express emotions without using words. It was a unique experience that motivated me to see design and fashion from a more creative perspective.";
+        "What impressed me most was discovering that colors can tell stories and express emotions without using words.";
 
         // PALABRAS CLAVE
         document.getElementById("card1").innerHTML = "Fashion";
@@ -75,13 +75,13 @@ function traducirPagina() {
 
         // CONCLUSIÓN
         document.getElementById("con1").innerHTML =
-        "Participating in this event was a very enriching experience because it allowed me to learn things I had never considered before about fashion and design. Thanks to Sara Victoria's presentation, I understood that color is not simply decorative, but a tool capable of transmitting emotions, ideas and messages.";
+        "Participating in this event was a very enriching experience because it allowed me to learn things I had never considered before about fashion and design.";
 
         document.getElementById("con2").innerHTML =
-        "One of the things that caught my attention the most was discovering how something as simple as choosing a color can have such a significant impact on a brand's identity, a garment or even the emotions of those who observe it.";
+        "I discovered that color is much more than decoration; it is a powerful communication tool.";
 
         document.getElementById("con3").innerHTML =
-        "In addition to expanding my knowledge, this experience motivated me to value creativity and innovation as tools for expressing ideas and generating change. Activities like this are important because they allow students to gain real experiences and discover new areas of interest.";
+        "This experience motivated me to value creativity and innovation as tools for expressing ideas and generating change.";
 
         // POPUP
         document.getElementById("popupSubtitulo").innerHTML =
@@ -106,4 +106,3 @@ function traducirPagina() {
     }
 
 }
-
